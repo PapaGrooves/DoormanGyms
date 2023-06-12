@@ -1,0 +1,521 @@
+/* Main components */
+
+* {
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+ body {
+    width:100%;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    border: 5px solid #6b7050;
+}
+
+ header {
+    width: 100%; 
+    padding: 20px 0;
+    text-align: center;
+    background-color: #9a4e30;
+    display: flex;
+    flex-direction: column;
+}
+
+ .banner {
+    width:100%;
+    padding: 0 0;
+    border-bottom-left-radius: 25rem;
+    border-bottom-right-radius: 25rem;
+    padding-bottom: 1rem;
+}
+
+ .opening {
+    font-size: 2rem;
+    color: #70867f;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* this is the header text*/
+
+ .title {
+    font-family: 'Dancing Script', cursive;
+    color:white;
+    font-size: 2rem;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+ .details {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+ /* column arrangement of body of the page */
+
+ .columns {
+    display: flex;
+    flex-flow: row; /* Changed from row wrap */
+    justify-content: center;
+    min-height: 200px;
+}
+
+ .column {
+    text-align: center;
+    flex-direction: column;
+}
+
+/* staff page style */
+
+ .card {
+    border: 3px solid black;
+    font-size: 2rem;
+    border-radius: 5rem;
+    max-width: 80%;
+    margin: 2rem auto;
+}
+
+/* this is what i added to fix the staff image problem */
+
+.card img {
+    width: 100%;
+}
+
+ .staff {
+    border-radius: 5rem 5rem;
+}
+
+.bio {
+    margin: 2rem 1rem;
+    font-size: 1rem;
+}
+
+.staff-heading {
+    margin: 2rem auto;
+}
+
+/* navigation bar styling */
+nav {
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: black;
+    padding: 1rem 0;
+    max-height: 5rem;
+}
+
+ li {
+    display: inline;
+}
+ ul { 
+    list-style-type: none;  
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+ }
+
+ a {
+    font-size: 1rem;
+    text-decoration: none;
+    color:white;
+   
+}
+
+/* second and third box heading styling*/
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem auto;
+    border-bottom: 0.4rem solid;
+    border-bottom-color:#dea17c;
+    width: 75%;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 0.5rem 0;
+}
+
+ .mission {
+    padding: 1rem;
+    text-align: center;
+}
+/* menu images*/
+
+ .menudisplay {
+    text-align: center;
+}
+ img {
+    padding: 2rem 2rem;
+ }
+
+ .food {
+     border-radius: 5rem;
+ }
+
+ .menu-column {
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     text-align: center;
+ }
+
+ .meal {
+    border: solid 2px #dea17c;
+    border-radius: 5rem 5rem;
+    margin: 1rem auto;
+    width: 100%;   /* Changed this to width */
+ }
+
+ .meal img {
+     width: 100%;
+ }
+
+ div.meal {
+     max-width: 80%;
+ }
+
+ p.ingredients {
+    margin: 2rem 2rem;
+ }
+
+ /* contact page, paragraph style */
+
+ .deets {
+     padding: 5rem 0;
+ }
+
+ /* footer bar styling */
+
+.fa {
+    font-size: 1.5rem;
+}
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #70867f;
+    border: 5px solid #6b7050;
+    text-align: center;
+    gap: 2rem;
+    margin-top: auto;
+}
+
+footer div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer div a {
+    font-size: 2rem;
+    padding: 0;
+}
+
+.footaddress {
+    text-align: center;
+}
+
+/* contact page form */
+.form-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-form {
+    border: 2px solid black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    border-radius: 1rem;
+}
+
+.contact-header {
+    text-align: center;
+    padding-bottom: 1rem;
+    color:black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+/* This is how you remove the outline from the input boxes */
+
+input:focus, input:hover,
+select:focus, select:hover,
+textarea:focus, textarea:hover {
+    outline: none;
+}
+
+select, textarea {
+    padding: 0.2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+textarea {
+    resize: none;
+    height: 10vh;
+}
+
+input[type="button"] {
+    background-color: #6b7050;
+    padding: 0.2rem;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    align-self: center;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.map {
+    width: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 30vh;
+}
+
+ /* website responsivness */
+
+ /* Smartphone */
+ @media screen and (min-width: 320px) {
+    body {
+        background-color: white;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .footaddress {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footaddress p {
+        padding: 0.5rem 0;
+    }
+
+/* staff page */
+
+    h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2.flavor {
+        margin: 2rem auto;
+    }
+    img.boss {
+        border-radius: 5rem 5rem;
+    }
+    .example {
+        border-radius: 5rem 5rem;
+    }
+}
+
+ /* Tablet */
+@media screen and (min-width: 640px) {
+
+    div.staffpics {
+        max-width: 40%;   
+        margin: 2rem auto;   
+        
+    }
+    div.mail {
+        max-width: 40%;
+        margin: 2rem auto;
+        
+    }
+
+     body {
+        flex-direction: row;
+    }
+
+     .mission {
+         font-size: 1.25rem;
+         padding: 2rem;
+     }
+
+     a {
+         font-size: 2rem;
+     }
+
+     .opening {
+         font-size: 2rem;
+     }
+
+     .hidden {
+         display: inline-block;   /* Change this to inline-block */
+     }
+
+     .example {
+         max-width: 50%;
+     }
+
+     
+     .footaddress {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-container {
+        flex-direction: row;
+        align-items: flex-start;
+    } 
+
+   /* menu page ||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+   div.meal {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+img.food {
+    max-width: 40%
+}
+
+h4, p.ingredients {
+    margin: auto 2rem;
+}
+
+   /* staff page |||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+   .card {
+       font-size: 1rem;
+       margin: auto;
+   }
+
+   h3 {
+       font-size: 1.5rem;
+       margin: auto;
+   }
+
+   .card {
+       margin: 2rem auto;
+       display: flex;
+       flex-direction: row;
+   }
+
+   .bio {
+       margin: auto 2rem ;
+       font-size: 0.75rem;
+   }
+
+   img.staff {
+       max-width: 40%;
+   }
+}
+
+/* Desktop */
+    @media screen and (min-width: 1200px) {
+        
+        .banner {
+            padding-bottom: 3rem;
+        }
+
+        .menudisplay {
+            max-width: 80%;
+            margin: auto;
+        }
+        div.meal  {
+            min-width: 40%;
+            max-width: 40%;
+            display: inline-flex;
+            margin: 1rem 1rem;
+        }
+        p.ingredients {
+            font-size: 0.75rem;
+            margin: auto 1rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        .map iframe {
+            height: 50vh;
+        }
+
+        /* staff page */
+
+        .card  {
+            max-width: 40%;
+            min-height: 15rem;
+            display: inline-flex;
+            margin: 1rem 1rem;
+        }
+
+        h3, h4 {
+            font-size: 1.25rem;
+        }
+
+        .bio {
+            font-size: 0.75rem;
+        }
+        
+        .staff {
+            min-width: 45%;
+        }
+
+        div.menu-column {
+            display: inline-block
+        }
+
+        div.column {
+            display: inline-block;
+        }
+
+        div.staffpics, div.mail {
+            display: inline-block;
+            margin: auto 5rem;
+        }
+
+        img.mail-icon {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1750px) {
+        p.bio, p.ingredients {
+            font-size: 1.25rem;
+        }
+    }
+    

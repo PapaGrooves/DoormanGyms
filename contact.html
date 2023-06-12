@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width-device-width, initial-scale-1"> -->
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Italian Restaurant</title>
+    <meta name="description" content="Glasgow Italian Grill">
+    <meta name="author" content="Jakub Urbaniak">
+
+    <!-- CDNs -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--font-family: 'Open Sans', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!--font-family: 'Dancing Script', cursive;-->
+    <!--Social media icon library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class=title>Glasgow Italian Grill </h1>
+        <p class=details>0141 9496 0555</p>
+        <p class=details>Italian.grill@glasgow</p>
+        <p class=details>19 Hatfield Drive
+            Anniesland
+            Glasgow G12 0YE</p>
+
+    </header>
+    <nav class="main-nav">
+        <ul class="main-ul">
+            <li class=main-li><a href="index.html"> Home</a></li>
+            <li class=main-li><a href="menu.html"> Menu</a></li>
+            <li class=main-li><a href="staff.html"> Staff</a></li>
+            <li class=main-li><a href="contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+    <!-- responsive image -->
+    <picture>
+        <source class="banner" srcset="Images/bannerd.jpg" media="(min-width:1200px)">
+        <source class="banner" srcset="Images/bannert.jpg" media="(min-width:640px)">
+        <img class="banner" srcset="Images/bannerm.jpg" alt="image of the restaurant">
+    </picture>
+
+    <section class="form-container">
+
+        <section class="contact-form">
+            <h2 class="contact-header"> Contact Us</h2>
+            <form method="" action="index.html">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name..." autofocus>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Enter email address" required>
+                <label for="tel">Mobile Number</label>
+                <input type="tel" name="mobile" id="mobile" placeholder="Enter your contact number">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Book a table">Book a table</option>
+                    <option value="Make a complaint">Make a complaint</option>
+                    <option value="General enequiry">General enequiry</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="33" required></textarea>
+                <input type="button" value="Submit">
+            </form>
+        </section>
+
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.4551068036565!2d-4.256215319797636!3d55.8597129882856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488847a30b31fcbd%3A0x7419a35cb9f6cf0f!2sSugo%20Pasta!5e0!3m2!1sen!2suk!4v1616066260093!5m2!1sen!2suk" 
+            allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+    </section>
+
+
+    <footer>
+        <div>
+            <a href="index.html" class="fa fa-facebook"></a>
+            <a href="index.html" class="fa fa-instagram"></a>
+            <a href="index.html" class="fa fa-twitter"></a>
+        </div>
+        <div class=footaddress>
+            <p>0141 9496 0555</p>
+            <p>Italian.grill@glasgow</p>
+            <p> 19 Hatfield Drive <br>
+                Anniesland <br>
+                Glasgow G12 0YE</p>
+        </div>
+    </footer>
+</body>
+
+</html>
